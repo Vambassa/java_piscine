@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users (
+    id BIGSERIAL PRIMARY KEY UNIQUE,
+    username VARCHAR(80) UNIQUE,
+    password VARCHAR(255)
+);
